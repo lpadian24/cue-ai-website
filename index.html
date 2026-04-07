@@ -59,7 +59,7 @@
         </h1>
         <p class="hero-subtitle" data-animate="fade-up" data-delay="200">
           Cue AI transforms the devices you already wear into an intelligent companion
-          that recognizes faces, recalls names, and whispers the right information
+          that recognizes faces, recalls names, and delivers the right information
           at the exact moment you need it.
         </p>
         <div class="hero-actions" data-animate="fade-up" data-delay="300">
@@ -89,24 +89,27 @@
         </div>
       </div>
       <div class="hero-visual" data-animate="fade-left" data-delay="200">
-        <div class="hero-device-mockup">
-          <div class="mockup-glasses">
-            <div class="glasses-frame">
-              <div class="glasses-lens left">
-                <div class="hud-overlay">
-                  <div class="hud-line hud-name">Sarah Mitchell</div>
-                  <div class="hud-line hud-relation">Your daughter</div>
-                  <div class="hud-line hud-context">Visited last Tuesday</div>
-                </div>
-              </div>
-              <div class="glasses-bridge"></div>
-              <div class="glasses-lens right"></div>
+        <div class="glasses-pov">
+          <div class="pov-lens left">
+            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=700&h=700&fit=crop&crop=faces" alt="A friendly woman smiling" loading="eager">
+            <div class="pov-scan-line"></div>
+            <div class="pov-target">
+              <span class="target-corner tl"></span>
+              <span class="target-corner tr"></span>
+              <span class="target-corner bl"></span>
+              <span class="target-corner br"></span>
+            </div>
+            <div class="pov-hud-card">
+              <div class="hud-card-dot"></div>
+              <div class="hud-card-name">Sarah Mitchell</div>
+              <div class="hud-card-relation">Your daughter</div>
+              <div class="hud-card-context">Visited last Tuesday</div>
             </div>
           </div>
-          <div class="mockup-pulse"></div>
-          <div class="mockup-ring ring-1"></div>
-          <div class="mockup-ring ring-2"></div>
-          <div class="mockup-ring ring-3"></div>
+          <div class="pov-bridge"></div>
+          <div class="pov-lens right">
+            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=700&h=700&fit=crop&crop=faces" alt="" loading="eager">
+          </div>
         </div>
       </div>
     </div>
@@ -207,7 +210,7 @@
               </div>
             </div>
             <h3>Prompt</h3>
-            <p>Within seconds, you hear a gentle whisper in your own voice: <em>"That's your daughter, Sarah. She visited last Tuesday."</em> Delivered through your preferred device.</p>
+            <p>Within seconds, a discreet prompt tells you: <em>"That's your daughter, Sarah. She visited last Tuesday."</em> Delivered through your glasses display, earpiece, or watch.</p>
           </div>
         </div>
       </div>
@@ -290,14 +293,14 @@
     </div>
   </section>
 
-  <!-- Voice Section -->
+  <!-- Prompting Section -->
   <section class="voice-section">
     <div class="container">
       <div class="voice-card" data-animate="fade-up">
         <div class="voice-content">
-          <span class="section-label light">Your Voice. Your Companion.</span>
-          <h2>Hear prompts in<br><span class="text-accent-light">your own voice.</span></h2>
-          <p>Cue AI uses ElevenLabs voice synthesis to clone your voice from a short recording session. Every prompt sounds like you speaking to yourself&mdash;natural, familiar, and deeply personal. It's not a robotic assistant. It's your own memory, speaking back to you.</p>
+          <span class="section-label light">Always There. Always Discreet.</span>
+          <h2>The right information,<br><span class="text-accent-light">at the right moment.</span></h2>
+          <p>Cue AI delivers prompts exactly when you need them&mdash;through a text overlay on your glasses, an audio cue in your earpiece, or a gentle tap on your wrist. The system chooses the best channel automatically, so the experience feels natural and seamless.</p>
           <div class="voice-demo">
             <div class="voice-wave">
               <span></span><span></span><span></span><span></span><span></span>
@@ -325,8 +328,8 @@
       <div class="devices-grid">
         <div class="device-card" data-animate="fade-up" data-delay="0">
           <div class="device-category">Smart Glasses</div>
-          <div class="device-icon">
-            <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M2 10a4 4 0 014-4h1l1.5 1h7L17 6h1a4 4 0 014 4v1a4 4 0 01-4 4h-1a3 3 0 01-2.5-1.5h-5A3 3 0 017 15H6a4 4 0 01-4-4v-1z"/><circle cx="7" cy="10.5" r="2.5"/><circle cx="17" cy="10.5" r="2.5"/></svg>
+          <div class="device-icon device-photo">
+            <img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=160&h=160&fit=crop" alt="Ray-Ban style smart glasses">
           </div>
           <h3>Ray-Ban Meta</h3>
           <p>Camera captures faces, speakers deliver prompts, microphones feed audio to the AI engine. Available with in-lens HUD display.</p>
@@ -334,17 +337,17 @@
         </div>
         <div class="device-card" data-animate="fade-up" data-delay="100">
           <div class="device-category">Earpieces</div>
-          <div class="device-icon">
-            <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M3 18v-6a9 9 0 0118 0v6"/><path d="M21 19a2 2 0 01-2 2h-1a2 2 0 01-2-2v-3a2 2 0 012-2h3v5zM3 19a2 2 0 002 2h1a2 2 0 002-2v-3a2 2 0 00-2-2H3v5z"/></svg>
+          <div class="device-icon device-photo">
+            <img src="https://images.unsplash.com/photo-1606220588913-b3aacb4d2f46?w=160&h=160&fit=crop" alt="Wireless earbuds">
           </div>
           <h3>AirPods Pro</h3>
-          <p>Discreet whispered prompts delivered directly to your ear. Future camera-equipped models add facial recognition without glasses.</p>
+          <p>Discreet audio prompts delivered directly to your ear. Future camera-equipped models add facial recognition without glasses.</p>
           <span class="device-price">From $179</span>
         </div>
         <div class="device-card" data-animate="fade-up" data-delay="200">
           <div class="device-category">Smartwatches</div>
-          <div class="device-icon">
-            <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="6" y="4" width="12" height="16" rx="4"/><rect x="8" y="7" width="8" height="10" rx="2"/><path d="M12 2v2M12 20v2"/></svg>
+          <div class="device-icon device-photo">
+            <img src="https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=160&h=160&fit=crop" alt="Apple Watch">
           </div>
           <h3>Apple Watch &amp; Galaxy Watch</h3>
           <p>Haptic tap alerts with glanceable name cards, fall detection, GPS geofencing for wandering prevention, and Emergency SOS.</p>
@@ -352,8 +355,8 @@
         </div>
         <div class="device-card" data-animate="fade-up" data-delay="300">
           <div class="device-category">Wearable AI Pin</div>
-          <div class="device-icon">
-            <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2"/></svg>
+          <div class="device-icon device-photo">
+            <img src="https://images.unsplash.com/photo-1589492477829-5e65395b66cc?w=160&h=160&fit=crop" alt="Wearable technology pin">
           </div>
           <h3>Plaud NotePin &amp; Omi</h3>
           <p>Ultra-discreet audio capture that clips to clothing. HIPAA-compliant, 20-hour battery life. Ideal for users who won't wear glasses.</p>
