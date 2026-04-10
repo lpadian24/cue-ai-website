@@ -173,9 +173,11 @@ p {
 }
 
 .hero-image {
+  position: relative;
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 20px 60px rgba(20, 30, 80, 0.18);
+  box-shadow: 0 20px 60px rgba(20, 30, 80, 0.25);
+  aspect-ratio: 1 / 1;
 }
 
 .hero-image img {
@@ -183,7 +185,119 @@ p {
   height: 100%;
   display: block;
   object-fit: cover;
-  aspect-ratio: 1 / 1;
+  filter: brightness(1.02) contrast(1.05);
+}
+
+/* HUD scan line */
+.pov-scan-line {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #00C2A8, transparent);
+  box-shadow: 0 0 12px #00C2A8;
+  animation: scan-sweep 3s ease-in-out infinite;
+  z-index: 2;
+  opacity: 0.85;
+  pointer-events: none;
+}
+
+@keyframes scan-sweep {
+  0%, 100% { top: 10%; opacity: 0; }
+  10% { opacity: 1; }
+  50% { top: 90%; opacity: 1; }
+  60% { opacity: 0; }
+}
+
+/* Targeting reticle */
+.pov-target {
+  position: absolute;
+  top: 38%;
+  left: 50%;
+  width: 130px;
+  height: 130px;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  animation: target-lock 1.5s ease-out 0.3s both;
+  pointer-events: none;
+}
+
+@keyframes target-lock {
+  0% { opacity: 0; transform: translate(-50%, -50%) scale(1.4); }
+  100% { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+}
+
+.target-corner {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  border-color: #00C2A8;
+  border-style: solid;
+  border-width: 0;
+}
+
+.target-corner.tl { top: 0; left: 0; border-top-width: 2.5px; border-left-width: 2.5px; }
+.target-corner.tr { top: 0; right: 0; border-top-width: 2.5px; border-right-width: 2.5px; }
+.target-corner.bl { bottom: 0; left: 0; border-bottom-width: 2.5px; border-left-width: 2.5px; }
+.target-corner.br { bottom: 0; right: 0; border-bottom-width: 2.5px; border-right-width: 2.5px; }
+
+/* HUD identification card */
+.pov-hud-card {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  background: rgba(11, 15, 26, 0.88);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(0, 194, 168, 0.45);
+  padding: 14px 18px;
+  border-radius: 12px;
+  z-index: 3;
+  animation: hud-card-appear 0.6s 1.3s both;
+  box-shadow: 0 0 30px rgba(0, 194, 168, 0.25);
+  text-align: left;
+}
+
+@keyframes hud-card-appear {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.hud-card-dot {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 8px;
+  height: 8px;
+  background: #00C2A8;
+  border-radius: 50%;
+  box-shadow: 0 0 8px #00C2A8;
+  animation: pulse-dot 2s infinite;
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+.hud-card-name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: white;
+}
+
+.hud-card-relation {
+  font-size: 0.82rem;
+  color: #00C2A8;
+  font-weight: 600;
+  margin-top: 2px;
+}
+
+.hud-card-context {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 2px;
 }
 
 /* Sections */
