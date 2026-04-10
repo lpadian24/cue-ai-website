@@ -397,6 +397,14 @@ p {
   object-fit: cover;
 }
 
+.section-footer {
+  text-align: center;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-top: 2.5rem;
+}
+
 /* Contact */
 .section-contact {
   background: var(--color-surface);
