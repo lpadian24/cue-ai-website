@@ -616,6 +616,18 @@ h4 { font-size: 1.1rem; }
   gap: var(--space-md);
 }
 
+.problem-grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.devices-grid-3 {
+  grid-template-columns: repeat(3, 1fr) !important;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
 .problem-card {
   padding: var(--space-lg);
   background: var(--color-surface);
