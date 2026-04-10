@@ -30,10 +30,19 @@
 
   <!-- Hero -->
   <section class="hero">
-    <div class="container">
-      <h1>Remember the moments<br><span class="text-accent">that matter most.</span></h1>
-      <p class="hero-subtitle">Helping people with memory loss recognize the ones they love.</p>
-      <a href="#contact" class="btn btn-primary">Get In Touch</a>
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <h1>Remember the moments<br><span class="text-accent">that matter most.</span></h1>
+        <p class="hero-subtitle">
+          Cue AI is an intelligent companion that helps people with Alzheimer's,
+          dementia, and visual impairment recognize the people they love &mdash;
+          using the everyday devices they already wear.
+        </p>
+        <a href="#contact" class="btn btn-primary">Get In Touch</a>
+      </div>
+      <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1581579438747-104c53e7a02e?w=600&h=600&fit=crop" alt="Elderly woman with family">
+      </div>
     </div>
   </section>
 
@@ -41,18 +50,28 @@
   <section class="section" id="what">
     <div class="container">
       <h2>How it works</h2>
+      <p class="lead">Three simple steps, working quietly in the background.</p>
       <div class="cards">
         <div class="card">
-          <div class="card-num">1</div>
+          <div class="card-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"/></svg>
+          </div>
           <h3>Recognize</h3>
+          <p>Identifies the people around you using cameras and microphones in everyday wearables.</p>
         </div>
         <div class="card">
-          <div class="card-num">2</div>
+          <div class="card-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>
+          </div>
           <h3>Remember</h3>
+          <p>Knows their names, how you know them, and meaningful context from your shared history.</p>
         </div>
         <div class="card">
-          <div class="card-num">3</div>
+          <div class="card-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 01-3.46 0"/></svg>
+          </div>
           <h3>Remind</h3>
+          <p>Delivers a discreet prompt the moment you need it &mdash; on glasses, earbuds, or your watch.</p>
         </div>
       </div>
     </div>
@@ -62,10 +81,29 @@
   <section class="section section-alt">
     <div class="container">
       <h2>Who it's for</h2>
+      <p class="lead">Built for people who want to stay connected to the world around them.</p>
       <div class="cards">
-        <div class="card"><h3>Memory Loss</h3></div>
-        <div class="card"><h3>Vision Loss</h3></div>
-        <div class="card"><h3>Caregivers</h3></div>
+        <div class="card">
+          <div class="card-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          </div>
+          <h3>Memory Support</h3>
+          <p>For those living with Alzheimer's, dementia, or age-related memory loss.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+          </div>
+          <h3>Vision Assistance</h3>
+          <p>For people who are blind or have low vision and want to know who's nearby.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+          </div>
+          <h3>Family &amp; Caregivers</h3>
+          <p>For loved ones who want to support independence and preserve dignity.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -74,11 +112,12 @@
   <section class="section section-contact" id="contact">
     <div class="container">
       <h2>Get in touch</h2>
+      <p class="lead">We'd love to hear from you.</p>
       <form class="contact-form" id="contactForm">
         <input type="text" name="name" placeholder="Name" required>
         <input type="email" name="email" placeholder="Email" required>
         <textarea name="message" rows="3" placeholder="Message"></textarea>
-        <button type="submit" class="btn btn-primary">Send</button>
+        <button type="submit" class="btn btn-primary">Send Message</button>
       </form>
     </div>
   </section>
