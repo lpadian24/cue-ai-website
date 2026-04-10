@@ -4,311 +4,107 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cue AI — Restoring Connection. Preserving Dignity.</title>
-  <meta name="description" content="Cue AI is an AI-powered companion for individuals with Alzheimer's, dementia, and visual impairment — running on the everyday devices people already trust.">
+  <meta name="description" content="Cue AI helps people with Alzheimer's, dementia, and visual impairment recognize the people they love.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
   <!-- Navigation -->
-  <nav class="navbar" id="navbar">
+  <nav class="navbar">
     <div class="nav-container">
       <a href="#" class="nav-logo">
         <span class="logo-icon">
-          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg width="28" height="28" viewBox="0 0 32 32" fill="none">
             <circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="2"/>
-            <path d="M10 16C10 12.686 12.686 10 16 10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
             <circle cx="16" cy="16" r="3" fill="currentColor"/>
           </svg>
         </span>
         <span class="logo-text">Cue AI</span>
       </a>
-      <div class="nav-links" id="navLinks">
-        <a href="#why">Why Cue AI</a>
-        <a href="#what">What It Does</a>
-        <a href="#devices">Devices</a>
-        <a href="#contact" class="nav-cta">Get In Touch</a>
-      </div>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+      <a href="#contact" class="nav-cta">Contact</a>
     </div>
   </nav>
 
-  <!-- Hero Section -->
-  <section class="hero" id="hero">
-    <div class="hero-bg">
-      <div class="hero-gradient"></div>
-      <div class="hero-particles" id="heroParticles"></div>
-    </div>
-    <div class="hero-container">
-      <div class="hero-content">
-        <div class="hero-badge" data-animate="fade-up">
-          <span class="badge-dot"></span>
-          In Development
-        </div>
-        <h1 data-animate="fade-up" data-delay="100">
-          Remember the moments<br>
-          <span class="hero-accent">that matter most.</span>
-        </h1>
-        <p class="hero-subtitle" data-animate="fade-up" data-delay="200">
-          Cue AI is an intelligent companion for people with Alzheimer's, dementia,
-          and visual impairment &mdash; helping them recognize the people they love
-          and stay connected to the world around them.
-        </p>
-        <div class="hero-actions" data-animate="fade-up" data-delay="300">
-          <a href="#what" class="btn btn-primary">
-            See What It Does
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </a>
-          <a href="#contact" class="btn btn-ghost">
-            Get In Touch
-          </a>
-        </div>
-      </div>
-      <div class="hero-visual" data-animate="fade-left" data-delay="200">
-        <div class="glasses-pov">
-          <div class="pov-lens left">
-            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=700&h=700&fit=crop&crop=faces" alt="A friendly woman smiling" loading="eager">
-            <div class="pov-scan-line"></div>
-            <div class="pov-target">
-              <span class="target-corner tl"></span>
-              <span class="target-corner tr"></span>
-              <span class="target-corner bl"></span>
-              <span class="target-corner br"></span>
-            </div>
-            <div class="pov-hud-card">
-              <div class="hud-card-dot"></div>
-              <div class="hud-card-name">Sarah Mitchell</div>
-              <div class="hud-card-relation">Your daughter</div>
-              <div class="hud-card-context">Visited last Tuesday</div>
-            </div>
-          </div>
-          <div class="pov-bridge"></div>
-          <div class="pov-lens right">
-            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=700&h=700&fit=crop&crop=faces" alt="" loading="eager">
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="hero-scroll-indicator">
-      <div class="scroll-line"></div>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <h1>Remember the moments<br><span class="text-accent">that matter most.</span></h1>
+      <p class="hero-subtitle">
+        Cue AI is an intelligent companion that helps people with Alzheimer's,
+        dementia, and visual impairment recognize the people they love.
+      </p>
+      <a href="#what" class="btn btn-primary">Learn More</a>
     </div>
   </section>
 
-  <!-- Why Section -->
-  <section class="problem" id="why">
+  <!-- What It Does -->
+  <section class="section" id="what">
     <div class="container">
-      <div class="section-header center" data-animate="fade-up">
-        <span class="section-label">Why Cue AI</span>
-        <h2>Forgetting a name isn't just<br>forgetting a word. <span class="text-accent">It's losing a connection.</span></h2>
-        <p class="section-desc">
-          Millions of people live with the daily anxiety of not recognizing the
-          person standing in front of them. Cue AI exists to give that recognition back.
-        </p>
+      <h2>What Cue AI does</h2>
+      <p class="lead">Three simple things, working quietly in the background.</p>
+      <div class="cards">
+        <div class="card">
+          <div class="card-num">1</div>
+          <h3>Recognize</h3>
+          <p>Identifies the people around you using everyday wearable devices.</p>
+        </div>
+        <div class="card">
+          <div class="card-num">2</div>
+          <h3>Remember</h3>
+          <p>Knows their names, how you know them, and meaningful context.</p>
+        </div>
+        <div class="card">
+          <div class="card-num">3</div>
+          <h3>Remind</h3>
+          <p>Gives you a discreet prompt the moment you need it.</p>
+        </div>
       </div>
-      <div class="problem-grid problem-grid-3">
-        <div class="problem-card" data-animate="fade-up" data-delay="0">
-          <div class="problem-icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M8 15s1.5-2 4-2 4 2 4 2" stroke-linecap="round"/><circle cx="9" cy="9" r="1" fill="currentColor" stroke="none"/><circle cx="15" cy="9" r="1" fill="currentColor" stroke="none"/></svg>
-          </div>
+    </div>
+  </section>
+
+  <!-- Who It's For -->
+  <section class="section section-alt">
+    <div class="container">
+      <h2>Who it's for</h2>
+      <p class="lead">Built for people who want to stay connected.</p>
+      <div class="cards">
+        <div class="card">
           <h3>Memory Support</h3>
-          <p>For individuals with Alzheimer's, dementia, or age-related memory difficulties who want to stay connected to the people in their lives.</p>
+          <p>For those living with Alzheimer's, dementia, or age-related memory difficulties.</p>
         </div>
-        <div class="problem-card" data-animate="fade-up" data-delay="100">
-          <div class="problem-icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
-          </div>
+        <div class="card">
           <h3>Vision Assistance</h3>
-          <p>For people who are blind or have low vision, providing real-time information about who they're speaking with and the world around them.</p>
+          <p>For people who are blind or have low vision and can't see who's in front of them.</p>
         </div>
-        <div class="problem-card" data-animate="fade-up" data-delay="200">
-          <div class="problem-icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
-          </div>
-          <h3>Caregiver Peace of Mind</h3>
-          <p>For families and caregivers who want to support their loved ones while preserving their independence and dignity.</p>
+        <div class="card">
+          <h3>Family &amp; Caregivers</h3>
+          <p>For loved ones who want to support independence and dignity.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- What It Does Section -->
-  <section class="how-it-works" id="what">
+  <!-- Contact -->
+  <section class="section section-contact" id="contact">
     <div class="container">
-      <div class="section-header center" data-animate="fade-up">
-        <span class="section-label">What It Does</span>
-        <h2>Intelligent assistance that<br><span class="text-accent">feels invisible.</span></h2>
-        <p class="section-desc">
-          Cue AI runs quietly in the background. When someone approaches,
-          you'll know exactly who they are.
-        </p>
-      </div>
-      <div class="steps">
-        <div class="step" data-animate="fade-up">
-          <div class="step-number">01</div>
-          <div class="step-content">
-            <div class="step-visual">
-              <div class="step-icon-wrap">
-                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/><circle cx="12" cy="10" r="3"/></svg>
-              </div>
-            </div>
-            <h3>Recognize</h3>
-            <p>Cue AI identifies the people around you using the cameras and microphones in your everyday devices.</p>
-          </div>
-        </div>
-        <div class="step-connector"></div>
-        <div class="step" data-animate="fade-up" data-delay="150">
-          <div class="step-number">02</div>
-          <div class="step-content">
-            <div class="step-visual">
-              <div class="step-icon-wrap">
-                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>
-              </div>
-            </div>
-            <h3>Remember</h3>
-            <p>It remembers names, relationships, and meaningful context about the people you care about most.</p>
-          </div>
-        </div>
-        <div class="step-connector"></div>
-        <div class="step" data-animate="fade-up" data-delay="300">
-          <div class="step-number">03</div>
-          <div class="step-content">
-            <div class="step-visual">
-              <div class="step-icon-wrap">
-                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2v10z"/></svg>
-              </div>
-            </div>
-            <h3>Remind</h3>
-            <p>A discreet prompt tells you who they are, how you know them, and the last time you spoke &mdash; right when you need it.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Devices Section -->
-  <section class="devices" id="devices">
-    <div class="container">
-      <div class="section-header center" data-animate="fade-up">
-        <span class="section-label">Built On Trusted Hardware</span>
-        <h2>Runs on the devices<br><span class="text-accent">people already wear.</span></h2>
-        <p class="section-desc">
-          No new gadgets to learn. Cue AI works with the wearables families already
-          own and trust &mdash; smart glasses, earbuds, and smartwatches.
-        </p>
-      </div>
-      <div class="devices-grid devices-grid-3">
-        <div class="device-card" data-animate="fade-up" data-delay="0">
-          <div class="device-category">Smart Glasses</div>
-          <div class="device-icon device-photo">
-            <img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=160&h=160&fit=crop" alt="Smart glasses">
-          </div>
-          <h3>Smart Glasses</h3>
-          <p>See who's in front of you with a glance. Cue AI recognizes faces through the glasses' camera.</p>
-        </div>
-        <div class="device-card" data-animate="fade-up" data-delay="100">
-          <div class="device-category">Earpieces</div>
-          <div class="device-icon device-photo">
-            <img src="https://images.unsplash.com/photo-1606220588913-b3aacb4d2f46?w=160&h=160&fit=crop" alt="Wireless earbuds">
-          </div>
-          <h3>Wireless Earbuds</h3>
-          <p>Hear discreet audio prompts directly in your ear, so only you know.</p>
-        </div>
-        <div class="device-card" data-animate="fade-up" data-delay="200">
-          <div class="device-category">Smartwatches</div>
-          <div class="device-icon device-photo">
-            <img src="https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=160&h=160&fit=crop" alt="Apple Watch">
-          </div>
-          <h3>Smartwatches</h3>
-          <p>Glance at your wrist for a name card, or feel a gentle tap that says "someone you know is approaching."</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Privacy Section -->
-  <section class="privacy" id="privacy">
-    <div class="container">
-      <div class="privacy-layout">
-        <div class="privacy-content" data-animate="fade-up">
-          <span class="section-label">Privacy First</span>
-          <h2>Your memories stay<br><span class="text-accent">yours. Period.</span></h2>
-          <p>Cue AI is built on a simple promise: the people you love and the moments you share belong to you. Sensitive information is processed privately on your own device.</p>
-        </div>
-        <div class="privacy-visual" data-animate="fade-left">
-          <div class="shield-graphic">
-            <div class="shield-ring ring-outer"></div>
-            <div class="shield-ring ring-middle"></div>
-            <div class="shield-ring ring-inner"></div>
-            <div class="shield-icon">
-              <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Impact Section -->
-  <section class="impact">
-    <div class="container">
-      <div class="impact-card" data-animate="fade-up">
-        <blockquote>
-          <p>&ldquo;Imagine a world where your mother recognizes everyone at Thanksgiving dinner again. Where your father can hold a conversation without the fear of forgetting. That's the world we're building.&rdquo;</p>
-        </blockquote>
-        <div class="impact-line"></div>
-        <div class="impact-mission">
-          <p>Restoring connection. Preserving dignity.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section class="contact" id="contact">
-    <div class="container">
-      <div class="contact-layout">
-        <div class="contact-content" data-animate="fade-up">
-          <span class="section-label">Get In Touch</span>
-          <h2>Help us bring<br><span class="text-accent">Cue AI to life.</span></h2>
-          <p>We'd love to hear from you &mdash; whether you're a family member looking for support, a clinician interested in our work, or a partner who wants to help us build the future of memory care.</p>
-        </div>
-        <div class="contact-form-wrap" data-animate="fade-left">
-          <form class="contact-form" id="contactForm">
-            <div class="form-group">
-              <label for="name">Full Name</label>
-              <input type="text" id="name" name="name" required placeholder="Your name">
-            </div>
-            <div class="form-group">
-              <label for="email">Email Address</label>
-              <input type="email" id="email" name="email" required placeholder="you@example.com">
-            </div>
-            <div class="form-group">
-              <label for="message">Message <span class="optional">(optional)</span></label>
-              <textarea id="message" name="message" rows="4" placeholder="Tell us how we can help..."></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary btn-full">
-              Send Message
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </button>
-            <p class="form-note">We respect your privacy.</p>
-          </form>
-        </div>
-      </div>
+      <h2>Get in touch</h2>
+      <p class="lead">We'd love to hear from you.</p>
+      <form class="contact-form" id="contactForm">
+        <input type="text" name="name" placeholder="Your name" required>
+        <input type="email" name="email" placeholder="Your email" required>
+        <textarea name="message" rows="4" placeholder="Your message (optional)"></textarea>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
     </div>
   </section>
 
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
-      <div class="footer-bottom">
-        <p>&copy; 2026 Cue AI, LLC. Restoring connection. Preserving dignity.</p>
-      </div>
+      <p>&copy; 2026 Cue AI, LLC. Restoring connection. Preserving dignity.</p>
     </div>
   </footer>
 
